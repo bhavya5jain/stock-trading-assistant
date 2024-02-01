@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading Assistant</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <h1>Stock Information</h1>
+
+    <form id="stockForm">
+
+        <div class="form-group">
+
+            <label for="stockName">Select Stock Name:</label>
+
+            <div class="autocomplete">
+
+                <input type="text" id="stockName" name="stockName" placeholder="Enter stock name" required />
+
+                <div id="stockSuggestions"></div>
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="capital">Capital:</label>
+
+            <select id="capital" name="capital" required>
+
+                <option value="">Select Capital</option>
+
+                <option value="0-10000">0-10,000 Yen</option>
+
+                <option value="10000-100000">10,000-100,000 Yen</option>
+
+                <option value="100000+">100,000+ Yen</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="risk">Risk Tolerance:</label>
+
+            <select id="risk" name="risk" required>
+
+                <option value="">Select Risk Tolerance</option>
+
+                <option value="low">Low</option>
+
+                <option value="mid">Mid</option>
+
+                <option value="high">High</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="timeFrame">Time Frame:</label>
+
+            <select id="timeFrame" name="timeFrame" required>
+
+                <option value="">Select Time Frame</option>
+
+                <option value="shortTerm">Short Term</option>
+
+                <option value="longTerm">Long Term</option>
+
+                <option value="intraday">Intraday</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Get Stock Information</button>
+        </div>
+    </form>
+
+
+    <div id="stockInfo">
+
+        <canvas id="stockChart"></canvas>
+    </div>
+
+    <div id="stockresponse"></div>
+</body>
+</html>

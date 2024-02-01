@@ -1,0 +1,165 @@
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 20px;
+
+        }
+
+ 
+
+        h1 {
+
+            text-align: center;
+
+        }
+
+ 
+
+        form {
+
+            max-width: 400px;
+
+            margin: 20px auto;
+
+            padding: 15px;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+ 
+
+        .form-group {
+
+            margin-bottom: 15px;
+
+        }
+
+ 
+
+        label {
+
+            display: block;
+
+            font-weight: bold;
+
+            margin-bottom: 5px;
+
+        }
+
+ 
+
+        input,
+
+        select {
+
+            width: 100%;
+
+            padding: 8px;
+
+            margin-top: 5px;
+
+            margin-bottom: 10px;
+
+            box-sizing: border-box;
+
+        }
+
+ 
+
+        button {
+
+            background-color: #4caf50;
+
+            color: white;
+
+            padding: 10px 15px;
+
+            border: none;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+ 
+
+        button:hover {
+
+            background-color: #45a049;
+
+        }
+
+ 
+
+        #stockSuggestions {
+
+            position: absolute;
+
+            z-index: 1;
+
+            width: 100%;
+
+            margin-top: 5px;
+
+            box-sizing: border-box;
+
+            display: none;
+
+            background-color: #f1f1f1;
+
+            border: 1px solid #ccc;
+
+            border-radius: 5px;
+
+        }
+
+ 
+
+        #stockSuggestions ul {
+
+            list-style-type: none;
+
+            margin: 0;
+
+            padding: 0;
+
+            cursor: pointer;
+
+        }
+
+ 
+
+        #stockSuggestions li {
+
+            padding: 8px;
+
+            border-bottom: 1px solid #ddd;
+
+        }
+
+ 
+
+        #stockSuggestions li:hover {
+
+            background-color: #ddd;
+
+        }
+
+ 
+
+        canvas {
+
+            max-width: 100%;
+
+            margin-top: 20px;
+
+        }
+
